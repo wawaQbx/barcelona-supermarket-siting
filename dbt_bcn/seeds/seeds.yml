@@ -1,0 +1,17 @@
+version: 2
+seeds:
+  - name: chain_colours
+    description: "VISUALISATION: one fixed colour per chain (Tableau 10, colour-blind safe) used on every map and chart of the dashboard and in QGIS; display label and sort order. Edit seeds/chain_colours.csv and run dbt seed. Built by dbt seed chain_colours"
+    columns:
+      - name: brand_group
+        tests: [unique, not_null]
+  - name: factor_labels
+    description: "VISUALISATION: display label, block and order of every predictor of the siting models (dashboard page 02). Edit seeds/factor_labels.csv and run dbt seed. Built by dbt seed factor_labels"
+    columns:
+      - name: factor_code
+        tests: [unique, not_null]
+  - name: chain_list_sources
+    description: "VISUALISATION (dashboard page 05): where each chain's store list comes from (Official = official store locator; OSM + census = OpenStreetMap completed with the 2024 commercial census; OSM + official = OpenStreetMap checked against the official locator) and its reference month (store list audit 2026-10-16; Dia and Alcampo locators not refreshable since 2026-06). Edit seeds/chain_list_sources.csv and run dbt seed. Built by dbt seed chain_list_sources"
+    columns:
+      - name: brand_group
+        tests: [unique, not_null]

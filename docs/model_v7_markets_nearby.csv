@@ -1,0 +1,12 @@
+group,stores,variable,rate_ratio_per_sd,ci95_low,ci95_high,p_value
+ALL,663,market_within_300m,1.01266,0.94919,1.08038,0.70318
+Condis,231,market_within_300m,1.05142,0.95425,1.15848,0.31083
+Dia,73,market_within_300m,1.22271,0.95674,1.56263,0.10815
+Caprabo,99,market_within_300m,0.96549,0.79859,1.16728,0.71688
+Mercadona,38,market_within_300m,0.76845,0.57987,1.01837,0.06676
+Consum_Charter,69,market_within_300m,0.79559,0.62368,1.01488,0.06561
+BonPreu_Esclat,36,market_within_300m,0.92204,0.62859,1.35248,0.67795
+Lidl,27,market_within_300m,1.35023,0.93102,1.95822,0.1134
+Aldi,27,market_within_300m,1.03486,0.73953,1.44812,0.84159
+Carrefour,37,market_within_300m,1.09541,0.77586,1.54656,0.60457
+Alcampo,26,market_within_300m,0.99944,0.6306,1.584,0.99809

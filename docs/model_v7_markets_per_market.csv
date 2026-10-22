@@ -1,0 +1,40 @@
+nom_mercat,nom_districte,chain_stores_50m_n,chain_stores_50m,chain_stores_100m_n,chain_stores_300m_n,nearest_chain_store_m,chain_openings_2016_2024_300m_n,fresh_2016,fresh_2019,fresh_2024,fresh_change_2016_2024_pct,fresh_change_2019_2024_pct
+Mercat Boqueria - Sant Josep,Ciutat Vella,0,,0,3,194.0,1,32.0,12.0,10.0,-68.75,-16.66667
+Mercat Santa Caterina,Ciutat Vella,0,,2,7,51.0,4,12.0,9.0,11.0,-8.33333,22.22222
+Mercat Lesseps,Gràcia,1,Caprabo,1,5,10.0,1,8.0,10.0,12.0,50.0,20.0
+Mercat Bon Pastor,Sant Andreu,1,Lidl,1,2,15.0,2,12.0,15.0,4.0,-66.66667,-73.33333
+Mercat Ciutat Meridiana,Nou Barris,1,Charter,2,2,11.0,1,1.0,3.0,3.0,200.0,0.0
+Mercat Sant Andreu,Sant Andreu,0,,0,2,114.0,2,17.0,36.0,38.0,123.52941,5.55556
+Mercat Abaceria Central,Gràcia,0,,0,7,108.0,5,52.0,33.0,26.0,-50.0,-21.21212
+Mercat Trinitat,Nou Barris,1,Consum,1,3,40.0,1,3.0,2.0,2.0,-33.33333,0.0
+Mercat Felip II,Sant Andreu,1,Caprabo,1,4,14.0,0,21.0,18.0,16.0,-23.80952,-11.11111
+Mercat Ninot,Eixample,1,Mercadona,1,3,34.0,3,16.0,17.0,14.0,-12.5,-17.64706
+Mercat Sarrià,Sarrià-Sant Gervasi,0,,0,2,106.0,1,8.0,4.0,7.0,-12.5,75.0
+Mercat Barceloneta,Ciutat Vella,1,Caprabo,3,5,46.0,1,10.0,11.0,13.0,30.0,18.18182
+Mercat Llibertat,Gràcia,1,Bon Preu,1,5,2.0,2,21.0,21.0,17.0,-19.04762,-19.04762
+Mercat Carmel,Horta-Guinardó,1,Condis,1,6,46.0,2,18.0,18.0,18.0,0.0,0.0
+Mercat Hostafrancs,Sants-Montjuïc,0,,1,5,84.0,5,15.0,10.0,9.0,-40.0,-10.0
+Mercat Sants,Sants-Montjuïc,1,Mercadona,1,8,15.0,3,23.0,24.0,26.0,13.04348,8.33333
+Mercat Marina,Sants-Montjuïc,1,Charter,2,8,7.0,2,14.0,13.0,17.0,21.42857,30.76923
+Mercat Montserrat,Nou Barris,2,"Aldi, Mercadona",2,3,24.0,1,40.0,21.0,17.0,-57.5,-19.04762
+Mercat Sant Martí,Sant Martí,2,"Condis, Mi Alcampo",2,6,19.0,1,16.0,21.0,18.0,12.5,-14.28571
+Mercat Besòs,Sant Martí,0,,0,0,313.0,0,6.0,3.0,4.0,-33.33333,33.33333
+Mercat Sant Gervasi,Sarrià-Sant Gervasi,0,,0,5,114.0,2,15.0,13.0,10.0,-33.33333,-23.07692
+Mercat Fort Pienc,Eixample,1,Aldi,1,3,7.0,0,9.0,8.0,7.0,-22.22222,-12.5
+Mercat Núria,Nou Barris,1,Charter,1,1,5.0,1,0.0,1.0,1.0,,0.0
+Mercat Concepció,Eixample,1,Caprabo,1,5,14.0,2,8.0,7.0,3.0,-62.5,-57.14286
+Mercat Sagrada Família,Eixample,2,"Bon Preu, Caprabo",3,10,34.0,4,34.0,28.0,27.0,-20.58824,-3.57143
+Mercat Sant Antoni,Eixample,1,Lidl,1,7,10.0,4,45.0,47.0,52.0,15.55556,10.6383
+Mercat Les Corts,Les Corts,0,,0,5,166.0,4,15.0,12.0,13.0,-13.33333,8.33333
+Mercat Galvany,Sarrià-Sant Gervasi,0,,0,5,102.0,2,13.0,12.0,9.0,-30.76923,-25.0
+Mercat Tres Torres,Sarrià-Sant Gervasi,0,,0,1,264.0,1,2.0,2.0,2.0,0.0,0.0
+Mercat Estrella,Gràcia,0,,2,6,57.0,4,18.0,21.0,19.0,5.55556,-9.52381
+Mercat Vall d'Hebron -Taxonera,Horta-Guinardó,1,Lidl,1,2,37.0,1,3.0,3.0,3.0,0.0,0.0
+Mercat Horta,Horta-Guinardó,0,,1,4,85.0,2,69.0,65.0,59.0,-14.49275,-9.23077
+Mercat Mercè,Nou Barris,0,,2,6,83.0,2,26.0,22.0,24.0,-7.69231,9.09091
+Mercat Guinardó,Horta-Guinardó,0,,1,5,68.0,2,21.0,29.0,25.0,19.04762,-13.7931
+Mercat Guineueta,Nou Barris,0,,1,2,66.0,0,7.0,7.0,7.0,0.0,0.0
+Mercat Canyelles,Nou Barris,1,Caprabo,1,2,13.0,1,2.0,4.0,2.0,0.0,-50.0
+Mercat Clot,Sant Martí,1,Condis,1,3,43.0,2,17.0,10.0,12.0,-29.41176,20.0
+Mercat Poblenou - Unió,Sant Martí,1,Aldi,1,7,14.0,4,24.0,16.0,16.0,-33.33333,0.0
+Mercat Provençals,Sant Martí,0,,1,2,65.0,1,15.0,19.0,16.0,6.66667,-15.78947

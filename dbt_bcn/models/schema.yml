@@ -1,0 +1,20 @@
+version: 2
+models:
+  - name: stg_city_stores
+    columns:
+      - name: store_id
+        tests: [unique, not_null]
+      - name: brand_group
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['Condis', 'Dia', 'Caprabo', 'Consum_Charter', 'Mercadona', 'Carrefour', 'BonPreu_Esclat', 'Alcampo', 'Lidl', 'Aldi']
+  - name: stores_per_district
+    columns:
+      - name: stores_n
+        tests: [not_null]
+  - name: chain_summary
+    columns:
+      - name: brand_group
+        tests: [unique, not_null]

@@ -1,0 +1,3 @@
+control,treated_sections,control_sections,openings_treated_pre,openings_treated_post,openings_control_pre,openings_control_post,did_rate_ratio,did_p_cluster,did_openings_per_section_year,randomisation_p
+no_metro_before,17,87,0,4,4,19,370285468.75446,0.0,0.0251,0.4698
+all_sections,17,1048,0,4,91,227,605437243.99556,0.0,0.04575,0.2524

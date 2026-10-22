@@ -1,0 +1,18 @@
+activity,premises,large,share_of_large_premises_pct,pct_of_this_activity_that_is_large,location_quotient_large
+banks / insurance,918,76,1.924,8.279,1.426
+"cars: dealers, repair",1685,164,4.152,9.733,1.676
+clothing / personal,4168,69,1.747,1.655,0.285
+culture / leisure / bingo,907,185,4.684,20.397,3.513
+education,2214,543,13.747,24.526,4.224
+furniture / household / DIY,2370,95,2.405,4.008,0.69
+gym / sport,1143,170,4.304,14.873,2.561
+health,2313,216,5.468,9.339,1.608
+industry / construction,3493,228,5.772,6.527,1.124
+other food shops,5550,49,1.241,0.883,0.152
+other retail,5651,136,3.443,2.407,0.414
+other services,14648,910,23.038,6.212,1.07
+parking / garage,445,115,2.911,25.843,4.45
+restaurants / bars / hotels,10864,372,9.418,3.424,0.59
+storage / transport,2912,167,4.228,5.735,0.988
+supermarket,2594,230,5.823,8.867,1.527
+vacant,6149,225,5.696,3.659,0.63

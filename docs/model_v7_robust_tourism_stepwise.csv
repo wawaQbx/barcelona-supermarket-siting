@@ -1,0 +1,109 @@
+outcome,n,spec,variable,rate_ratio_per_sd,ci95_low,ci95_high,p_value
+ALL chain stores,663,S0_no_controls,ln_hut_beds_per_100,1.13511,1.07958,1.1935,0.0
+ALL chain stores,663,S1_demand,ln_hut_beds_per_100,1.06154,0.98765,1.14095,0.10471
+ALL chain stores,663,S2_plus_transit_premises,ln_hut_beds_per_100,0.96149,0.8889,1.04001,0.32684
+ALL chain stores,663,S3_plus_centre_distance_v7,ln_hut_beds_per_100,0.98642,0.90579,1.07422,0.75324
+ALL chain stores,663,S4_plus_cadastre_rent_proxy_buildings,ln_hut_beds_per_100,0.96448,0.87523,1.06284,0.46545
+ALL chain stores,663,S5_plus_district_fixed_effects,ln_hut_beds_per_100,0.98152,0.88279,1.0913,0.73027
+ALL chain stores,663,S0_no_controls,ln_hut_beds_300m_per_100,1.18766,1.1212,1.25805,0.0
+ALL chain stores,663,S1_demand,ln_hut_beds_300m_per_100,1.05992,0.96979,1.15843,0.19933
+ALL chain stores,663,S2_plus_transit_premises,ln_hut_beds_300m_per_100,0.9654,0.87865,1.06072,0.46357
+ALL chain stores,663,S3_plus_centre_distance_v7,ln_hut_beds_300m_per_100,1.05742,0.91912,1.21652,0.435
+ALL chain stores,663,S4_plus_cadastre_rent_proxy_buildings,ln_hut_beds_300m_per_100,0.99777,0.84569,1.17719,0.97885
+ALL chain stores,663,S5_plus_district_fixed_effects,ln_hut_beds_300m_per_100,1.0285,0.88737,1.19206,0.70905
+ALL chain stores,663,S0_no_controls,ln_airbnb_per_100,1.15605,1.09944,1.21558,0.0
+ALL chain stores,663,S1_demand,ln_airbnb_per_100,1.1713,1.07968,1.27071,0.00014
+ALL chain stores,663,S2_plus_transit_premises,ln_airbnb_per_100,1.02132,0.9342,1.11656,0.64284
+ALL chain stores,663,S3_plus_centre_distance_v7,ln_airbnb_per_100,1.10021,0.99557,1.21586,0.0611
+ALL chain stores,663,S4_plus_cadastre_rent_proxy_buildings,ln_airbnb_per_100,1.15104,1.03165,1.28424,0.01181
+ALL chain stores,663,S5_plus_district_fixed_effects,ln_airbnb_per_100,1.15331,1.02988,1.29153,0.01352
+"convenience format, all chains",76,S0_no_controls,ln_hut_beds_per_100,1.37947,1.11307,1.70962,0.0033
+"convenience format, all chains",76,S1_demand,ln_hut_beds_per_100,1.20287,0.92712,1.56065,0.16442
+"convenience format, all chains",76,S2_plus_transit_premises,ln_hut_beds_per_100,1.12688,0.85749,1.4809,0.39146
+"convenience format, all chains",76,S3_plus_centre_distance_v7,ln_hut_beds_per_100,1.19867,0.86683,1.65755,0.27317
+"convenience format, all chains",76,S4_plus_cadastre_rent_proxy_buildings,ln_hut_beds_per_100,1.20745,0.892,1.63445,0.22238
+"convenience format, all chains",76,S5_plus_district_fixed_effects,ln_hut_beds_per_100,1.17993,0.84776,1.64224,0.32665
+"convenience format, all chains",76,S0_no_controls,ln_hut_beds_300m_per_100,1.47509,1.11005,1.96016,0.00737
+"convenience format, all chains",76,S1_demand,ln_hut_beds_300m_per_100,1.03518,0.74754,1.43349,0.83511
+"convenience format, all chains",76,S2_plus_transit_premises,ln_hut_beds_300m_per_100,0.96406,0.67541,1.37608,0.84023
+"convenience format, all chains",76,S3_plus_centre_distance_v7,ln_hut_beds_300m_per_100,1.16024,0.66251,2.03189,0.60316
+"convenience format, all chains",76,S4_plus_cadastre_rent_proxy_buildings,ln_hut_beds_300m_per_100,1.18205,0.66241,2.10932,0.57137
+"convenience format, all chains",76,S5_plus_district_fixed_effects,ln_hut_beds_300m_per_100,1.16676,0.58999,2.30737,0.65753
+"convenience format, all chains",76,S0_no_controls,ln_airbnb_per_100,1.40298,1.19011,1.65392,6e-05
+"convenience format, all chains",76,S1_demand,ln_airbnb_per_100,1.38092,1.13073,1.68646,0.00155
+"convenience format, all chains",76,S2_plus_transit_premises,ln_airbnb_per_100,1.2753,1.01689,1.59937,0.0353
+"convenience format, all chains",76,S3_plus_centre_distance_v7,ln_airbnb_per_100,1.5711,1.17901,2.09357,0.00204
+"convenience format, all chains",76,S4_plus_cadastre_rent_proxy_buildings,ln_airbnb_per_100,1.61983,1.22876,2.13537,0.00062
+"convenience format, all chains",76,S5_plus_district_fixed_effects,ln_airbnb_per_100,1.73087,1.27527,2.34923,0.00043
+Carrefour_convenience,29,S0_no_controls,ln_hut_beds_per_100,1.36626,0.99982,1.867,0.05013
+Carrefour_convenience,29,S1_demand,ln_hut_beds_per_100,1.25325,0.80981,1.93951,0.31099
+Carrefour_convenience,29,S2_plus_transit_premises,ln_hut_beds_per_100,1.15361,0.73944,1.79978,0.52888
+Carrefour_convenience,29,S3_plus_centre_distance_v7,ln_hut_beds_per_100,1.21224,0.74786,1.96499,0.43479
+Carrefour_convenience,29,S4_plus_cadastre_rent_proxy_buildings,ln_hut_beds_per_100,1.30102,0.85649,1.97625,0.21731
+Carrefour_convenience,29,S5_plus_district_fixed_effects,ln_hut_beds_per_100,1.30394,0.7793,2.18178,0.31226
+Carrefour_convenience,29,S0_no_controls,ln_hut_beds_300m_per_100,1.41638,0.92107,2.17804,0.11285
+Carrefour_convenience,29,S1_demand,ln_hut_beds_300m_per_100,1.01193,0.45077,2.27165,0.97708
+Carrefour_convenience,29,S2_plus_transit_premises,ln_hut_beds_300m_per_100,0.95221,0.40916,2.216,0.90954
+Carrefour_convenience,29,S3_plus_centre_distance_v7,ln_hut_beds_300m_per_100,1.08446,0.41843,2.81059,0.86748
+Carrefour_convenience,29,S4_plus_cadastre_rent_proxy_buildings,ln_hut_beds_300m_per_100,1.25335,0.46458,3.38128,0.65562
+Carrefour_convenience,29,S5_plus_district_fixed_effects,ln_hut_beds_300m_per_100,1.3188,0.46524,3.73837,0.60268
+Carrefour_convenience,29,S0_no_controls,ln_airbnb_per_100,1.3768,1.06486,1.78012,0.01471
+Carrefour_convenience,29,S1_demand,ln_airbnb_per_100,1.37251,0.85991,2.19068,0.1844
+Carrefour_convenience,29,S2_plus_transit_premises,ln_airbnb_per_100,1.20627,0.73183,1.98829,0.46205
+Carrefour_convenience,29,S3_plus_centre_distance_v7,ln_airbnb_per_100,1.4149,0.79859,2.50685,0.23433
+Carrefour_convenience,29,S4_plus_cadastre_rent_proxy_buildings,ln_airbnb_per_100,1.40857,0.81155,2.44477,0.22333
+Carrefour_convenience,29,S5_plus_district_fixed_effects,ln_airbnb_per_100,1.60534,0.87569,2.94293,0.12584
+Condis,231,S0_no_controls,ln_hut_beds_per_100,1.15687,1.06208,1.26011,0.00083
+Condis,231,S1_demand,ln_hut_beds_per_100,1.09344,0.97239,1.22956,0.13561
+Condis,231,S2_plus_transit_premises,ln_hut_beds_per_100,1.03742,0.92089,1.16871,0.54563
+Condis,231,S3_plus_centre_distance_v7,ln_hut_beds_per_100,1.08655,0.95283,1.23905,0.21541
+Condis,231,S4_plus_cadastre_rent_proxy_buildings,ln_hut_beds_per_100,1.04205,0.90811,1.19574,0.55736
+Condis,231,S5_plus_district_fixed_effects,ln_hut_beds_per_100,1.01278,0.87804,1.1682,0.86155
+Condis,231,S0_no_controls,ln_hut_beds_300m_per_100,1.16459,1.04537,1.29741,0.00569
+Condis,231,S1_demand,ln_hut_beds_300m_per_100,1.02105,0.83932,1.24213,0.835
+Condis,231,S2_plus_transit_premises,ln_hut_beds_300m_per_100,0.95808,0.78321,1.172,0.67709
+Condis,231,S3_plus_centre_distance_v7,ln_hut_beds_300m_per_100,1.07725,0.80762,1.4369,0.61267
+Condis,231,S4_plus_cadastre_rent_proxy_buildings,ln_hut_beds_300m_per_100,0.96542,0.72212,1.2907,0.81226
+Condis,231,S5_plus_district_fixed_effects,ln_hut_beds_300m_per_100,0.93102,0.68066,1.27346,0.65468
+Condis,231,S0_no_controls,ln_airbnb_per_100,1.14282,1.02892,1.26933,0.0127
+Condis,231,S1_demand,ln_airbnb_per_100,1.12857,0.96028,1.32635,0.1421
+Condis,231,S2_plus_transit_premises,ln_airbnb_per_100,1.0483,0.87483,1.25617,0.60929
+Condis,231,S3_plus_centre_distance_v7,ln_airbnb_per_100,1.16264,0.94328,1.433,0.15778
+Condis,231,S4_plus_cadastre_rent_proxy_buildings,ln_airbnb_per_100,1.24396,0.99894,1.54906,0.05112
+Condis,231,S5_plus_district_fixed_effects,ln_airbnb_per_100,1.26073,1.02053,1.55746,0.03168
+Alcampo_MiAlcampo,22,S0_no_controls,ln_hut_beds_per_100,1.44269,1.03,2.02073,0.03301
+Alcampo_MiAlcampo,22,S1_demand,ln_hut_beds_per_100,1.23523,0.76889,1.98443,0.38244
+Alcampo_MiAlcampo,22,S2_plus_transit_premises,ln_hut_beds_per_100,1.20121,0.69033,2.09014,0.51654
+Alcampo_MiAlcampo,22,S3_plus_centre_distance_v7,ln_hut_beds_per_100,1.00045,0.5478,1.82715,0.99882
+Alcampo_MiAlcampo,22,S4_plus_cadastre_rent_proxy_buildings,ln_hut_beds_per_100,1.22749,0.75233,2.00276,0.41187
+Alcampo_MiAlcampo,22,S5_plus_district_fixed_effects,ln_hut_beds_per_100,1.47178,0.89583,2.41802,0.12708
+Alcampo_MiAlcampo,22,S0_no_controls,ln_hut_beds_300m_per_100,1.47988,1.02512,2.13638,0.0364
+Alcampo_MiAlcampo,22,S1_demand,ln_hut_beds_300m_per_100,1.5069,0.73831,3.07562,0.25996
+Alcampo_MiAlcampo,22,S2_plus_transit_premises,ln_hut_beds_300m_per_100,1.4248,0.571,3.55528,0.44794
+Alcampo_MiAlcampo,22,S3_plus_centre_distance_v7,ln_hut_beds_300m_per_100,0.75093,0.20466,2.75526,0.66583
+Alcampo_MiAlcampo,22,S4_plus_cadastre_rent_proxy_buildings,ln_hut_beds_300m_per_100,0.96488,0.26137,3.56191,0.95721
+Alcampo_MiAlcampo,22,S5_plus_district_fixed_effects,ln_hut_beds_300m_per_100,1.35631,0.42127,4.3668,0.60944
+Alcampo_MiAlcampo,22,S0_no_controls,ln_airbnb_per_100,1.67169,1.16948,2.38958,0.00482
+Alcampo_MiAlcampo,22,S1_demand,ln_airbnb_per_100,1.67137,1.1323,2.4671,0.00973
+Alcampo_MiAlcampo,22,S2_plus_transit_premises,ln_airbnb_per_100,1.87281,1.2838,2.73207,0.00113
+Alcampo_MiAlcampo,22,S3_plus_centre_distance_v7,ln_airbnb_per_100,1.6287,0.94198,2.81604,0.08081
+Alcampo_MiAlcampo,22,S4_plus_cadastre_rent_proxy_buildings,ln_airbnb_per_100,1.67581,0.98405,2.85385,0.05733
+Alcampo_MiAlcampo,22,S5_plus_district_fixed_effects,ln_airbnb_per_100,1.62575,0.89092,2.96666,0.11328
+independent supermarkets (census 2024),1740,S0_no_controls,ln_hut_beds_per_100,1.42534,1.30777,1.55349,0.0
+independent supermarkets (census 2024),1740,S1_demand,ln_hut_beds_per_100,1.36573,1.22908,1.51757,0.0
+independent supermarkets (census 2024),1740,S2_plus_transit_premises,ln_hut_beds_per_100,1.25477,1.16001,1.35726,0.0
+independent supermarkets (census 2024),1740,S3_plus_centre_distance_v7,ln_hut_beds_per_100,1.21671,1.13464,1.30471,0.0
+independent supermarkets (census 2024),1740,S4_plus_cadastre_rent_proxy_buildings,ln_hut_beds_per_100,1.16901,1.09306,1.25025,1e-05
+independent supermarkets (census 2024),1740,S5_plus_district_fixed_effects,ln_hut_beds_per_100,1.15966,1.07484,1.25118,0.00013
+independent supermarkets (census 2024),1740,S0_no_controls,ln_hut_beds_300m_per_100,1.43806,1.29231,1.60026,0.0
+independent supermarkets (census 2024),1740,S1_demand,ln_hut_beds_300m_per_100,1.47503,1.26328,1.72227,0.0
+independent supermarkets (census 2024),1740,S2_plus_transit_premises,ln_hut_beds_300m_per_100,1.33238,1.19347,1.48745,0.0
+independent supermarkets (census 2024),1740,S3_plus_centre_distance_v7,ln_hut_beds_300m_per_100,1.28056,1.13887,1.43987,4e-05
+independent supermarkets (census 2024),1740,S4_plus_cadastre_rent_proxy_buildings,ln_hut_beds_300m_per_100,1.15811,1.03324,1.29808,0.01168
+independent supermarkets (census 2024),1740,S5_plus_district_fixed_effects,ln_hut_beds_300m_per_100,1.12175,0.98272,1.28047,0.08881
+independent supermarkets (census 2024),1740,S0_no_controls,ln_airbnb_per_100,1.41897,1.33592,1.50718,0.0
+independent supermarkets (census 2024),1740,S1_demand,ln_airbnb_per_100,1.39295,1.27818,1.51802,0.0
+independent supermarkets (census 2024),1740,S2_plus_transit_premises,ln_airbnb_per_100,1.24397,1.13609,1.3621,0.0
+independent supermarkets (census 2024),1740,S3_plus_centre_distance_v7,ln_airbnb_per_100,1.20444,1.08981,1.33112,0.00027
+independent supermarkets (census 2024),1740,S4_plus_cadastre_rent_proxy_buildings,ln_airbnb_per_100,1.17945,1.07518,1.29384,0.00047
+independent supermarkets (census 2024),1740,S5_plus_district_fixed_effects,ln_airbnb_per_100,1.16996,1.07009,1.27914,0.00056

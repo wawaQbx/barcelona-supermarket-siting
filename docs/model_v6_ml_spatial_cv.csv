@@ -1,0 +1,7 @@
+cv,model,auc
+random_5fold,logit,0.64952
+random_5fold,random_forest,0.6374
+random_5fold,gradient_boosting,0.60657
+spatial_barri_5fold,logit,0.65685
+spatial_barri_5fold,random_forest,0.65069
+spatial_barri_5fold,gradient_boosting,0.64238

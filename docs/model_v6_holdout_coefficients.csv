@@ -1,0 +1,13 @@
+variable,rate_ratio_per_sd,p_value
+ln_density_2015,0.98707,0.84325
+share_65plus_2015,0.99118,0.90566
+tertiary_2015,1.25336,0.21272
+ln_income_2015,1.17921,0.26593
+ln_premises_2014,0.97781,0.8171
+commercial_floor_share_pct,1.21453,0.00212
+ln_cadastral_value,0.82415,0.2484
+dist_centre_km,0.86548,0.1685
+ln_transit,0.99273,0.9302
+ln_chain_stores_ring_2014,0.89458,0.07509
+ln_premises_price_2011_barri,0.87553,0.1272
+ln_pedestrian_priority_len_m,1.13472,0.04815

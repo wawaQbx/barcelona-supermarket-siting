@@ -1,0 +1,180 @@
+version: 2
+# Derived analysis tables of schema ana (formerly sql/ana_*.sql). The description becomes the table COMMENT (persist_docs);
+# the tests check the primary keys (dbt build runs them right after each model).
+models:
+  # ---------- transit ----------
+  - name: gtfs_service_day
+    description: "GTFS services running on the representative days (weekday 2026-10-14, Sat 10-17, Sun 10-18). Built by dbt model gtfs_service_day"
+  - name: gtfs_trip_runs
+    description: "Departures per GTFS trip (headway-based trips expanded to their number of runs). Built by dbt model gtfs_trip_runs"
+    columns:
+      - name: trip_id
+        tests: [unique, not_null]
+  - name: gtfs_stop_service
+    description: "Departures per TMB stop/station on representative days (weekday 2026-10-14, Sat 10-17, Sun 10-18); platforms rolled up to parent station; headway trips expanded. Built by dbt model gtfs_stop_service"
+    columns:
+      - name: stop_id
+        tests: [unique, not_null]
+
+  # ---------- population ----------
+  - name: pop_age_bands_section
+    description: "Age bands per census section reconciled with the official population (withheld single-age cells below 5 re-added exactly at section total, spread by number of withheld cells per band). Built by dbt model pop_age_bands_section"
+    columns:
+      - name: seccio_censal
+        tests: [unique, not_null]
+      - name: reconciles
+        tests:
+          - accepted_values:
+              arguments:
+                values: [true]
+                quote: false
+  - name: pop_age_bands_barri
+    description: "Age bands per barri (sum of the reconciled section estimates). Built by dbt model pop_age_bands_barri"
+    columns:
+      - name: codi_barri
+        tests: [unique, not_null]
+  - name: pop_education_section
+    description: "Education per census section: tertiary = level 5 only (level 6 is \"not available\"); withheld cells below 5 only affect levels 1 and 6. Built by dbt model pop_education_section"
+    columns:
+      - name: seccio_censal
+        tests: [unique, not_null]
+  - name: pop_education_barri
+    description: "Education per barri (sums of the section counts); tertiary = level 5 only. Replaces raw.pop_educa_superior_by_barri (level 6 'not available' counted as higher education). Built by dbt model pop_education_barri"
+    columns:
+      - name: codi_barri
+        tests: [unique, not_null]
+  - name: income_barri
+    description: "Income per barri as the POPULATION-WEIGHTED mean of the sections (replaces the simple mean of raw.inc_renda_gini_by_barri) and the population-weighted mean / min / max of the SECTION Gini (a true barri Gini cannot be computed from section values). Built by dbt model income_barri"
+    columns:
+      - name: codi_barri
+        tests: [unique, not_null]
+  - name: cadastral_value_barri
+    description: "Cadastral value per m2 by barri weighted by floor area (total value / total floor area); replaces the simple mean of raw.hou_2026_valor_cadastral_by_barri. Built by dbt model cadastral_value_barri"
+    columns:
+      - name: codi_barri
+        tests: [unique, not_null]
+  - name: motorization_section
+    description: "Vehicles per 1000 residents for all 1068 census sections, recomputed from registered vehicles / population (published index covers 17% only). Built by dbt model motorization_section"
+    columns:
+      - name: seccio_censal
+        tests: [unique, not_null]
+
+  - name: pop_nationality_section
+    description: "Foreign residents per census section, 1 January 2015 and 2026 (Padro nationality group: Spain / rest of EU / rest of world), withheld cells below 5 reconciled with the official total. Built by dbt model pop_nationality_section"
+    columns:
+      - name: seccio_censal
+        tests: [unique, not_null]
+
+  # ---------- tourism ----------
+  - name: section_tourism
+    description: "Tourist accommodation per census section: licensed tourist flats and beds (HUT 2026 and 2017), hotels, Airbnb listings / entire homes / reviews of the last 12 months (Inside Airbnb 2026-09). Built by dbt model section_tourism"
+    columns:
+      - name: seccio_censal
+        tests: [unique, not_null]
+  - name: section_airbnb_reviews_year
+    description: "Airbnb reviews per census section and year 2010-2026 (listings online in 2026-09 only: survivorship bias, early years under-counted). Built by dbt model section_airbnb_reviews_year"
+    tests:
+      - unique_combination:
+          arguments:
+            columns: "seccio_censal, review_year"
+
+  # ---------- stores ----------
+  - name: store_points
+    description: "All stores used by the analyses as EPSG:25831 points: official list (Clarel drugstores removed) + OSM Dia and ring stores outside the city + census-2024 supplement (point_source), with brand_group, format_group, in_city and first census year. Built by dbt model store_points"
+    columns:
+      - name: store_id
+        tests: [unique, not_null]
+      - name: brand_group
+        tests: [not_null]
+  - name: store_points_excluded
+    description: "Store-list entries excluded from all analyses (57 Clarel drugstores listed as Dia Market by the Dia locator). Built by dbt model store_points_excluded"
+  - name: store_group_membership
+    description: "Store -> group (chain, format group, ALL), used to count stores per group. Built by dbt model store_group_membership"
+  - name: store_counts_section
+    description: "Stores per census section and group (chain, format group, ALL): inside the section (also split by opening period), ring counts outside the section (competition), and within 250/500/1000/2000 m of its boundary (n_city_* = city stores only; n_all_* = also stores outside the city). Built by dbt model store_counts_section"
+    tests:
+      - unique_combination:
+          arguments:
+            columns: "seccio_censal, brand_group"
+  - name: store_counts_barri
+    description: "Stores per barri and brand group (inside; within 500/1000 m, city-only and all). Built by dbt model store_counts_barri"
+    tests:
+      - unique_combination:
+          arguments:
+            columns: "codi_barri, brand_group"
+  - name: store_openings
+    description: "City stores first seen 2016-2024 with opening_type: new_site / takeover_of_food_premise (food shop within 25 m in the previous census) / clarel_conversion. Built by dbt model store_openings"
+    columns:
+      - name: store_id
+        tests: [unique, not_null]
+  - name: store_openings_section
+    description: "Store openings 2016-2024 per census section and group, by opening type. Built by dbt model store_openings_section"
+  - name: site_buildings
+    description: "Building (cadastre INSPIRE) of every city store and of every other active ground-floor premise 2024 (controls): year of construction, use, floors, footprint, units. Built by dbt model site_buildings"
+    columns:
+      - name: site_id
+        tests: [unique, not_null]
+  - name: store_list_validation
+    description: "Validation of every city store of the store list against the commercial censuses (brand name within 60 m, other supermarket premise within 30 m, nearest 2024 premise). Built by dbt model store_list_validation"
+    columns:
+      - name: store_id
+        tests: [unique, not_null]
+      - name: evidence
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['brand_in_2024', 'brand_earlier_only', 'other_supermarket', 'no_evidence']
+
+  - name: traditional_food_shops_2024
+    description: "Traditional (fresh) food shops of the 2024 census: bakery, butcher, greengrocer, fishmonger, poultry / eggs. Replaces raw.com_layer2_alimentacio_tradicional (fish and poultry missing). Built by dbt model traditional_food_shops_2024"
+    columns:
+      - name: premise_id
+        tests: [unique, not_null]
+  - name: market_supermarkets
+    description: "Municipal markets (43): chain stores within 50 m (at the market) and 300 m, nearest chain store, chain openings 2016-2024 nearby, daily-food shops within 300 m in every census edition. Built by dbt model market_supermarkets"
+    columns:
+      - name: nom_mercat
+        tests: [unique, not_null]
+
+  # ---------- time ordering, event studies, natural experiments ----------
+  - name: section_baseline_2015
+    description: "Predictors measured before the 2016-2024 openings: Padro 2015 (population, density, 65+ share reconciled, tertiary share), income 2015, 2014 census premises. Built by dbt model section_baseline_2015"
+    columns:
+      - name: seccio_censal
+        tests: [unique, not_null]
+  - name: store_site_premises_panel
+    description: "Event-study panel: active ground-floor premises within 150 m (own premise excluded) around each dated city store in each census edition. Built by dbt model store_site_premises_panel"
+  - name: section_metro_l10
+    description: "Natural experiment: sections that gained metro access with L10 Sud (Foc / Foneria, Sep 2018) vs. the rest; supermarket openings before / after. Built by dbt model section_metro_l10"
+    columns:
+      - name: seccio_censal
+        tests: [unique, not_null]
+  - name: store_site_premises_by_type
+    description: "Event-study panel by premise type (daily food, other retail, restaurants 2016+, services) within 150 m of each dated city store. Built by dbt model store_site_premises_by_type"
+  - name: supermarket_premises_closures
+    description: "Supermarket-class premises of the 2019 and 2022 censuses, chain from the sign name, closed = no supermarket premise within 20 m in the next census. Built by dbt model supermarket_premises_closures"
+    columns:
+      - name: premise_id
+        tests: [unique, not_null]
+  - name: section_pacified_streets
+    description: "Natural experiment: sections within 30 m of the pacified streets of 2020 Q3 vs the rest; active premises 2016-2024 and supermarket openings before / after. Built by dbt model section_pacified_streets"
+    columns:
+      - name: seccio_censal
+        tests: [unique, not_null]
+  - name: section_walkability
+    description: "Length of pedestrian-priority single-platform streets inside each section (+25 m). Built by dbt model section_walkability"
+    columns:
+      - name: seccio_censal
+        tests: [unique, not_null]
+
+  # ---------- model tables ----------
+  - name: section_model_table
+    description: "One row per census section (1068): predictors for the siting models (population, age, education, income, vehicles, transit, 2024 census premises, housing, cadastral value and building form, roads and traffic, position). Built by dbt model section_model_table"
+    columns:
+      - name: seccio_censal
+        tests: [unique, not_null]
+  - name: barri_model_table
+    description: "One row per barri (73): the section predictors aggregated (rates are population-weighted; cars exclude fleet-distorted sections). Built by dbt model barri_model_table"
+    columns:
+      - name: codi_barri
+        tests: [unique, not_null]

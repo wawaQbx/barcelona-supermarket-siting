@@ -1,0 +1,53 @@
+group,outcome,stores,sections_with_store,competition_ring,mcfadden_pseudo_r2,cv_auc_presence,residual_morans_i_500m,events_per_variable,note
+ALL,all_current_stores,663,505.0,n_ring_500m,0.0555,0.649,-0.0128,82.875,
+ALL,legacy_open_in_2014,257,222.0,n_ring_500m,0.0618,0.6697,-0.0157,32.125,
+ALL,openings_2016_2024,318,280.0,n_ring_500m_legacy_2014,0.0364,0.6131,-0.0315,39.75,
+ALL,openings_new_site_only,255,234.0,n_ring_500m_legacy_2014,0.031,0.6022,-0.0184,31.875,
+Condis,all_current_stores,231,219.0,n_ring_500m,0.0258,0.59,-0.0144,25.6667,
+Condis,legacy_open_in_2014,65,64.0,n_ring_500m,0.0655,0.6729,-0.0033,7.2222,
+Condis,openings_2016_2024,130,127.0,n_ring_500m_legacy_2014,0.0441,0.6196,-0.0151,14.4444,
+Condis,openings_new_site_only,112,110.0,n_ring_500m_legacy_2014,0.0351,0.5865,-0.0144,12.4444,
+Dia,all_current_stores,73,72.0,n_ring_500m,0.0607,0.6288,0.0018,8.1111,
+Dia,legacy_open_in_2014,54,54.0,n_ring_500m,0.0683,0.6569,0.004,6.0,
+Dia,openings_2016_2024,14,,,,,,,fewer than 15 stores: not modelled
+Dia,openings_new_site_only,13,,,,,,,fewer than 15 stores: not modelled
+Caprabo,all_current_stores,99,98.0,n_ring_500m,0.0728,0.6755,0.0066,11.0,
+Caprabo,legacy_open_in_2014,49,49.0,n_ring_500m,0.1472,0.7761,0.0003,5.4444,
+Caprabo,openings_2016_2024,42,42.0,n_ring_500m_legacy_2014,0.031,0.5759,-0.0089,4.6667,
+Caprabo,openings_new_site_only,26,26.0,n_ring_500m_legacy_2014,0.0314,0.559,-0.0063,2.8889,
+Mercadona,all_current_stores,38,38.0,n_ring_500m,0.0739,0.682,-0.0064,4.2222,
+Mercadona,legacy_open_in_2014,19,19.0,n_ring_500m,0.0518,0.6043,-0.0029,2.1111,
+Mercadona,openings_2016_2024,17,17.0,n_ring_500m_legacy_2014,0.0904,0.6458,-0.0076,1.8889,
+Mercadona,openings_new_site_only,16,16.0,n_ring_500m_legacy_2014,0.0885,0.688,-0.0063,1.7778,
+Consum_Charter,all_current_stores,69,69.0,n_ring_500m,0.0403,0.6088,0.0038,7.6667,
+Consum_Charter,legacy_open_in_2014,32,32.0,n_ring_500m,0.0735,0.6499,-0.004,3.5556,
+Consum_Charter,openings_2016_2024,30,30.0,n_ring_500m_legacy_2014,0.0608,0.6297,-0.0087,3.3333,
+Consum_Charter,openings_new_site_only,21,21.0,n_ring_500m_legacy_2014,0.0721,0.6461,-0.001,2.3333,
+BonPreu_Esclat,all_current_stores,36,36.0,n_ring_500m,0.0629,0.6422,-0.0056,4.0,
+BonPreu_Esclat,legacy_open_in_2014,20,20.0,n_ring_500m,0.0927,0.6687,-0.0047,2.2222,
+BonPreu_Esclat,openings_2016_2024,12,,,,,,,fewer than 15 stores: not modelled
+BonPreu_Esclat,openings_new_site_only,12,,,,,,,fewer than 15 stores: not modelled
+Lidl,all_current_stores,27,27.0,n_ring_500m,0.1065,0.7077,-0.0001,3.0,
+Lidl,legacy_open_in_2014,12,,,,,,,fewer than 15 stores: not modelled
+Lidl,openings_2016_2024,11,,,,,,,fewer than 15 stores: not modelled
+Lidl,openings_new_site_only,9,,,,,,,fewer than 15 stores: not modelled
+Aldi,all_current_stores,27,27.0,n_ring_500m,0.1365,0.7329,-0.0089,3.0,
+Aldi,legacy_open_in_2014,0,,,,,,,fewer than 15 stores: not modelled
+Aldi,openings_2016_2024,16,16.0,n_ring_500m_legacy_2014,0.1199,0.7214,-0.0119,2.0,
+Aldi,openings_new_site_only,15,15.0,n_ring_500m_legacy_2014,0.1588,0.756,-0.0151,1.875,
+Alcampo_MiAlcampo,all_current_stores,22,22.0,n_ring_500m,0.0825,0.575,-0.0128,2.4444,
+Alcampo_MiAlcampo,legacy_open_in_2014,0,,,,,,,fewer than 15 stores: not modelled
+Alcampo_MiAlcampo,openings_2016_2024,17,17.0,n_ring_500m_legacy_2014,0.1035,0.6905,0.019,2.125,
+Alcampo_MiAlcampo,openings_new_site_only,11,,,,,,,fewer than 15 stores: not modelled
+Alcampo_hypermarket,all_current_stores,4,,,,,,,fewer than 15 stores: not modelled
+Alcampo_hypermarket,legacy_open_in_2014,0,,,,,,,fewer than 15 stores: not modelled
+Alcampo_hypermarket,openings_2016_2024,3,,,,,,,fewer than 15 stores: not modelled
+Alcampo_hypermarket,openings_new_site_only,2,,,,,,,fewer than 15 stores: not modelled
+Carrefour_convenience,all_current_stores,29,29.0,n_ring_500m,0.0542,0.5842,-0.0024,3.2222,
+Carrefour_convenience,legacy_open_in_2014,4,,,,,,,fewer than 15 stores: not modelled
+Carrefour_convenience,openings_2016_2024,21,21.0,n_ring_500m_legacy_2014,0.0464,0.568,-0.0125,2.3333,
+Carrefour_convenience,openings_new_site_only,14,,,,,,,fewer than 15 stores: not modelled
+Carrefour_supermarket,all_current_stores,8,,,,,,,fewer than 15 stores: not modelled
+Carrefour_supermarket,legacy_open_in_2014,2,,,,,,,fewer than 15 stores: not modelled
+Carrefour_supermarket,openings_2016_2024,5,,,,,,,fewer than 15 stores: not modelled
+Carrefour_supermarket,openings_new_site_only,4,,,,,,,fewer than 15 stores: not modelled

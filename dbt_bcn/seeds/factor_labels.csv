@@ -1,0 +1,16 @@
+factor_code,factor_label,factor_short,factor_block,factor_order,unit_note
+ln_population_per_ha,Population density,Density,People,1,residents per ha (log)
+share_age_65plus_pct,Residents aged 65+,Age 65+,People,2,share of residents
+share_tertiary_education_pct,University degree,Degree,People,3,share of adults
+ln_income_eur,Income per person,Income,People,4,disposable income (log)
+cars_per_1000_residents,Cars per resident,Cars,Access,5,cars per 1000 residents
+ln_transit_departures_300m,Public transport nearby,Transit,Access,6,weekday departures within 300 m (log)
+dist_centre_km,Distance to the centre,To centre,Access,7,km to Placa Catalunya
+ln_active_premises,Active ground-floor shops,Shops,Shops and streets,8,active premises (log)
+ln_main_road_len_m,Main roads,Roads,Shops and streets,9,main-road length within 50 m (log)
+ln_pedestrian_street_len_m,Pedestrian streets,Pedestrian,Shops and streets,10,pedestrian-street length within 50 m (log)
+ln_imd_max_300m,Road traffic,Traffic,Shops and streets,11,highest daily traffic within 300 m (log)
+bldg_mean_age_years,Building age,Bldg age,Buildings and cost,12,mean age of buildings (years)
+ln_cadastral_value_eur_m2,Property value,Price,Buildings and cost,13,cadastral value per m2 (log)
+floor_area_ratio,Built density,Built dens.,Buildings and cost,14,floor area / plot area
+commercial_floor_share_pct,Commercial floor space,Commercial,Buildings and cost,15,share of floor area in commercial use

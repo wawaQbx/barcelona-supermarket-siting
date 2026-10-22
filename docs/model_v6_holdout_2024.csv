@@ -1,0 +1,4 @@
+model,train_openings_2016_2022,test_openings_2024,auc_2024,share_of_2024_openings_in_top10pct_sections
+poisson_2015_predictors,247,71,0.58311,0.25352
+gradient_boosting_2015_predictors,247,71,0.57492,0.12676
+random_ranking,247,71,0.44638,0.04225

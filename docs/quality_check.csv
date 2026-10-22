@@ -1,0 +1,20 @@
+check,status,detail
+table descriptions,OK,167 tables; without comment: []
+"geometry typed, EPSG:25831",OK,33 geometry columns; not typed / other SRID: []
+geometry valid,OK,all valid
+"primary keys (ana, gis)",OK,40 tables with a primary key; without (not in the expected list): []
+shared keys hold valid codes,OK,1068 census sections; all keys valid
+population totals,OK,"{'raw.pop_2026_pad_base': 1729963, 'ana.pop_age_bands_section': 1729963, 'ana.section_model_table': 1729963, 'ana.barri_model_table': 1729963, 'ana.pop_nationality_section': 1729963, 'gis.section_indicators': 1729963, 'gis.barri_indicators': 1729963}"
+city store totals,OK,"{'ana.store_points in_city': 676, 'gis.stores in_city': 676, 'ana.store_list_validation': 676}; inside a section polygon 674, inside a barri polygon 674 (stores on the boundary line count as in the city but in no polygon)"
+openings totals,OK,"{'ana.store_openings (excl. Clarel)': 323, 'gis.section_indicators': 323, 'gis.barri_indicators': 323}"
+store dating coverage,OK,587 of 676 city stores dated (86.8%)
+one store = one point,OK,"close pairs to review: []; reviewed and kept: ['Charter / Dia 7 m @ 41.36953,2.10201', 'Condis / Dia 4 m @ 41.43432,2.21692']"
+value ranges (derived tables),OK,"shares within 0-100, no negative counts, location quotients > 0"
+type audit,OK,"[('MED', 'source-damaged text (bytes lost in the original file; not recoverable)', 8)] (source-damaged text = bytes lost in the original file, documented, not recoverable)"
+raw import complete,OK,"112 imported tables, row counts unchanged since import: True []; 16 files skipped by design (meta.skipped_files)"
+natural keys unique (raw),OK,"{'raw.pop_2026_pad_base': 0, 'raw.cen_census_2024': 0, 'raw.cen_census_2022': 0, 'raw.gtfs_stops': 0, 'raw.cad_inspire_buildings': 0, 'raw.store_supermarkets_official': 0, 'raw.adm_census_section_lookup': 0, 'raw.tou_airbnb_listings_2026_09': 0, 'raw.tou_hut_comunicacio_2026_1t': 0, 'raw.trf_aforament_desc_2025': 0}"
+shared keys filled (raw),OK,"unexpected: []; expected by design: ['adm_units_points (other unit types have no section / barri code)', 'adm_units_polygons (other unit types (district, AEB, city ...) have no section / barri code)', 'hou_contractes_lloguer_anual (city- and district-level rows (column nivell))', 'rel_religious_facilities (37 entries without coordinates in the source (not used by any analysis))', 'store_supermarke"
+tables in the English catalog,OK,all 167 tables listed
+tables in the Chinese catalog,OK,all 167 tables listed
+dbt tests,OK,02:49:19  Done. PASS=97 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=97
+independent re-verification,OK,"columns checked: 2262 | === A) type findings: 18 | === B) columns whose VALUES are a shared concept but whose NAME is not the canonical one: 7 (reviewed 2026-10-15: type findings = codes kept as text by policy (seccio_censal_orig, stop_code, store codes, feed_version); naming = postal-code columns already named codi_postal, an OSM tag and a multi-level name column; details: data/verify_types.csv, "

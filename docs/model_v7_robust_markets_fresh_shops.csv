@@ -1,0 +1,3 @@
+period,markets_change_pct,matched_controls_change_pct,median_market_minus_control_pp,wilcoxon_p,median_change_chain_at_market_pct,median_change_no_chain_pct,mannwhitney_p,spearman_openings_vs_change,markets_used,control_points
+2016-2024,-14.53488,-17.85016,9.16371,0.16743,-12.5,-12.5,0.62751,-0.09831,38,1091
+2019-2024,-6.06061,-15.08636,10.0,0.05931,0.0,-9.23077,0.81997,-0.0396,39,1091

@@ -1,0 +1,13 @@
+# Connection used by dbt. No password here: libpq reads it from %APPDATA%\postgresql\pgpass.conf
+dbt_bcn:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: localhost
+      port: 5432
+      user: postgres
+      password: ""
+      dbname: supermarket_bcn
+      schema: dbt          # dbt writes its models into the schema "dbt" (raw / ana are not touched)
+      threads: 4

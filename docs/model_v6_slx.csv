@@ -1,0 +1,5 @@
+group,aic_without_lags,aic_with_lags,wald_lags_chi2,wald_lags_p,significant_lags
+ALL,2078.65514,2083.449,43.51538,2e-05,lag_share_age_65plus_pct 0.87; lag_ln_cadastral_value_eur_m2 1.48
+Condis,1173.84227,1187.65088,27.586,0.00636,lag_share_age_65plus_pct 0.78
+Dia,527.29297,538.49389,23.51591,0.02365,lag_share_age_65plus_pct 0.50; lag_ln_income_eur 5.42
+Mercadona,306.08745,319.59906,16.99879,0.14964,

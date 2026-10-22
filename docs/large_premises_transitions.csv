@@ -1,0 +1,18 @@
+activity_2016,banks / insurance,"cars: dealers, repair",clothing / personal,culture / leisure / bingo,education,furniture / household / DIY,gym / sport,health,industry / construction,other food shops,other retail,other services,parking / garage,restaurants / bars / hotels,storage / transport,supermarket,vacant
+banks / insurance,64,0,0,0,1,2,0,3,0,5,1,6,0,4,1,6,11
+"cars: dealers, repair",0,101,0,0,2,2,5,2,3,0,2,1,1,0,8,3,14
+clothing / personal,0,0,50,2,1,5,4,0,0,0,0,3,0,2,1,2,1
+culture / leisure / bingo,0,0,0,138,6,1,3,0,0,0,0,12,0,11,0,1,5
+education,0,0,0,3,443,0,2,2,1,1,0,9,1,1,1,0,7
+furniture / household / DIY,1,2,0,1,1,45,2,2,2,0,4,3,0,0,0,8,5
+gym / sport,0,0,1,0,2,1,107,1,0,0,0,2,0,1,0,0,4
+health,0,1,0,0,2,0,1,152,0,0,0,11,0,0,0,1,6
+industry / construction,1,6,0,0,1,1,0,0,109,0,0,12,0,0,8,1,11
+no activity / no information,1,5,4,6,3,6,7,6,17,0,11,43,2,11,17,11,16
+other food shops,1,0,2,0,0,1,2,2,0,22,5,4,0,6,1,156,10
+other retail,0,3,2,0,0,2,1,2,2,1,79,8,0,3,1,6,4
+other services,3,4,0,4,18,4,6,9,14,3,6,578,0,12,8,4,38
+parking / garage,0,0,0,0,0,0,0,0,0,0,0,1,98,0,5,0,2
+restaurants / bars / hotels,0,0,0,1,0,1,2,0,1,3,0,11,0,246,1,1,11
+storage / transport,0,6,0,2,5,7,2,0,15,5,2,11,1,1,75,4,14
+vacant,1,10,1,1,5,9,1,8,10,1,3,26,0,2,10,5,22

@@ -1,0 +1,79 @@
+version: 2
+# Tables NOT built by dbt: imported by import_all.py (schema raw, and the py_ / dim_ tables of schema ana).
+# Models read them with {{ source('raw', 'table') }} / {{ source('ana', 'table') }}; dbt draws them as the green start nodes of the lineage graph.
+sources:
+  - name: ana
+    schema: ana
+    tables:
+      - name: dim_district
+      - name: dim_neighborhood
+      - name: py_stores_opening_era_city   # first census edition of every city store (census_panel.py)
+      - name: py_section_food_access       # walking access per section (build_food_access.py, runs after import_all)
+      - name: py_building_food_access      # walking minutes per residential building (build_food_access.py)
+      - name: py_model_v4_coefficients     # siting model v4 coefficients (load_model_outputs.py, after analyze_siting.py)
+      - name: py_model_v4_fit              # siting model v4 fit per chain group
+      - name: py_food_desert_viability     # catchment of the flagged food-access sections vs existing stores (food_desert_viability.py)
+  - name: raw
+    schema: raw
+    tables:
+      # administrative units
+      - name: adm_units_polygons
+      - name: adm_census_section_lookup
+      # stores
+      - name: store_supermarkets_official
+      - name: store_coordinate_corrections
+      - name: store_official_locators
+        description: Official store locators of Mercadona and Aldi (fetch_official_locators.py), used to drop closed and add missing stores of these OSM-sourced chains.
+      - name: store_removals_manual
+        description: Stores removed by hand with evidence - closed, listed twice (duplicate) or wrong coordinates; matched by chain + address or chain + point (5 m).
+      - name: store_ring_stores_2km
+      - name: hist_osm_shops
+      # commercial censuses (ground-floor premises)
+      - name: cen_census_2014
+      - name: cen_census_2016
+      - name: cen_census_2019
+      - name: cen_census_2022
+      - name: cen_census_2024
+      # population, education, income
+      - name: pop_2026_pad_base
+      - name: pop_2026_pads_edat_1
+      - name: pop_2026_pad_16niv_educa_sexe
+      - name: pop_padro_population_history
+      - name: pop_padro_age5_2015
+      - name: pop_padro_education_2015
+      - name: inc_2022_renda_disponible_llars_per_persona
+      - name: inc_2023_atles_renda_index_gini
+      - name: inc_income_history
+      - name: pop_padro_nationality_2015_2026
+      # housing, cadastre, planning
+      - name: hou_2026_us_desti_by_seccio
+      - name: hou_2026_valor_cadastral_by_seccio
+      - name: hou_2026_loc_hab_valors
+      - name: cad_edif_edat
+      - name: cad_edif_any
+      - name: cad_finques_sup
+      - name: cad_inspire_buildings
+      - name: pgm_qualif_polygons
+      # tourism and markets
+      - name: tou_hut_comunicacio_2026_1t
+      - name: tou_2017_huts_illa
+      - name: tou_hotels
+      - name: tou_airbnb_listings_2026_09
+      - name: tou_airbnb_reviews_per_year
+      - name: com_mercats_municipals_clean
+      - name: com_osm_food_shops_box       # OSM food shops ~2 km around the city (fetch_ring_food_osm.py)
+      # transport and traffic
+      - name: gtfs_calendar
+      - name: gtfs_calendar_dates
+      - name: gtfs_frequencies
+      - name: gtfs_routes
+      - name: gtfs_stops
+      - name: gtfs_stop_times
+      - name: gtfs_trips
+      - name: trf_parc_vehicles
+      - name: trf_motor_2025
+      - name: trf_osm_roads
+      - name: trf_aforament_desc_2025
+      - name: trf_aforament_detall_2025
+      - name: trf_streets_pacified_2020_2022
+      - name: trf_streets_pedestrian_priority_2023_2026

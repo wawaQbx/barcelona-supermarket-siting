@@ -1,0 +1,17 @@
+group,openings,variable,rate_ratio_per_sd,ci95_low,ci95_high,p_value
+ALL,318,ln_hut_beds_2017_per_100,1.02586,0.90249,1.16609,0.69613
+ALL,318,share_foreign_non_eu_2015_pct,0.90655,0.71974,1.14184,0.40465
+Carrefour,26,ln_hut_beds_2017_per_100,0.87754,0.53666,1.43495,0.60262
+Carrefour,26,share_foreign_non_eu_2015_pct,0.89698,0.60403,1.332,0.58993
+Alcampo,20,ln_hut_beds_2017_per_100,1.08862,0.57833,2.04916,0.79247
+Alcampo,20,share_foreign_non_eu_2015_pct,0.92252,0.38114,2.23291,0.85809
+Condis,130,ln_hut_beds_2017_per_100,1.28417,1.0742,1.53519,0.00604
+Condis,130,share_foreign_non_eu_2015_pct,0.62185,0.42117,0.91817,0.01688
+Caprabo,42,ln_hut_beds_2017_per_100,0.82649,0.62397,1.09472,0.18388
+Caprabo,42,share_foreign_non_eu_2015_pct,1.13836,0.75607,1.71395,0.53481
+Mercadona,17,ln_hut_beds_2017_per_100,1.34577,0.77361,2.34109,0.29313
+Mercadona,17,share_foreign_non_eu_2015_pct,0.7827,0.33206,1.8449,0.57545
+Consum_Charter,30,ln_hut_beds_2017_per_100,1.18231,0.67902,2.05865,0.55395
+Consum_Charter,30,share_foreign_non_eu_2015_pct,1.05346,0.57842,1.91864,0.86482
+Lidl,11,ln_hut_beds_2017_per_100,0.69808,0.20899,2.3318,0.55916
+Lidl,11,share_foreign_non_eu_2015_pct,0.69619,0.29883,1.62193,0.40135

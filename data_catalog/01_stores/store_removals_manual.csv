@@ -1,0 +1,8 @@
+ensenya,adreca,lat,lon,reason_type,evidence,source_url
+Lidl,,41.4127914,2.1974089,closed,"Carrer de Bac de Roda 178: site taken over by Aldi (Aldi locator ES002150 at the same point, opened June 2026); no Lidl there in current OSM",https://metropoliabierta.elespanol.com/vivir-en-barcelona/20260603/fecha-confirmada-abre-nuevo-supermercado-aldi-m2-superficie-ventas-popular-barrio-barcelona/1003742766468_0.html
+Carrefour Express,,41.3897281,2.1623325,closed,"Balmes 62 (OSM point): the 2024 census records MI ALCAMPO at this premise (4 m), listed separately by the Alcampo locator",
+Condis,"C/ Torrent de l'Olla, 180, 08012, BARCELONA",,,duplicate,"corner store listed twice (Torrent de l'Olla 180 / Asturies 66-68, 36 m apart); the 2024 census has one CONDIS EXPRESS there",
+Mi Alcampo,"Travessera de Dalt, 78, 08024, Barcelona",,,duplicate,"same address listed as Alcampo and Mi Alcampo; the 2024 census has one ALCAMPO premise",
+Alcampo,"Autopista Autopista C-58 Salida 12, 08192, Sant Quirze Del Vallès",,,wrong_coordinates,"Sant Quirze del Valles hypermarket geocoded into la Guineueta (Barcelona), 21 m from Mi Alcampo Guineueta 23; the real site is beyond the 2 km ring",
+Mi Alcampo,"Calle Ramón Muntaner, 08022, Barcelona",,,wrong_coordinates,"Muntaner 561 (Barcelona) geocoded at 41.4666 / 2.0682 outside the city; the store is already in the list from the 2024 census (Mi Alcampo Muntaner 561)",
+Caprabo,,41.4302932,2.168672,closed,"Passeig de Fabra i Puig 299: CAPRABO in the 2022 census (6 m), ALDI in the 2024 census at the same point and no Caprabo; Aldi locator ES002123 lists the site. The OSM point is stale",

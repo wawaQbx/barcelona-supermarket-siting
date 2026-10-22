@@ -1,0 +1,7 @@
+model,stores,convenience_stores,odds_ratio_per_sd,ci95_low,ci95_high,p_value
+conv ~ z_ln_hut_beds_300m + C(brand_group),308,75,1.30489,0.89496,1.90259,0.16662
+conv ~ z_ln_hut_beds_300m + z_dist_km + C(brand_group),308,75,1.24115,0.61964,2.48607,0.54216
+conv ~ z_ln_hut_beds_300m + z_dist_km + z_ln_premises_300m + z_ln_income + z_ln_density + C(brand_group),308,75,1.08336,0.55026,2.13292,0.8168
+conv ~ z_ln_airbnb_300m + C(brand_group),308,75,1.45009,1.00752,2.08707,0.04547
+conv ~ z_ln_airbnb_300m + z_dist_km + C(brand_group),308,75,2.5741,0.94427,7.01707,0.06462
+conv ~ z_ln_airbnb_300m + z_dist_km + z_ln_premises_300m + z_ln_income + z_ln_density + C(brand_group),308,75,2.5188,0.94309,6.72721,0.06532

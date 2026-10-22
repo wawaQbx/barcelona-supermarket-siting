@@ -1,0 +1,41 @@
+# Python / dbt environments and caches
+.venv/
+.venv-dbt/
+__pycache__/
+*.pyc
+
+# dbt generated files and local user id
+dbt_bcn/target/
+dbt_bcn/logs/
+dbt_bcn/.user.yml
+
+# Data: raw downloads, cleaned copies and working files are not redistributed.
+# They are rebuilt from the public sources with the fetch_* scripts (see README "Data sources").
+data/
+data_clean/
+data_catalog/*
+!data_catalog/01_stores/
+data_catalog/01_stores/*
+# hand-documented store removals with evidence are published
+!data_catalog/01_stores/store_removals_manual.csv
+
+# Store lists scraped from the chains' websites and the feature tables built from them (root folder)
+/*.csv
+/*.geojson
+
+# Power BI report (embeds all data; screenshots are in docs/img/)
+*.pbix
+*.pbip
+
+# Exploratory / one-off scripts and logs kept locally only
+archive/
+*.log
+
+# Local snapshots and editor files
+docs/data_catalog_supermarket_bcn_ZH.xlsx
+dashboard/layout/
+.idea/
+.claude/
+.vscode/
+*.tmp
+~$*

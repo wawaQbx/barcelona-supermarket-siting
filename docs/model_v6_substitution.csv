@@ -1,0 +1,17 @@
+premise_type,event_time,pct_change,ci95_low_pct,ci95_high_pct,p_value,mean_premises
+daily_food_other,pre_k_le_m2,5.23413,-2.64695,13.75322,0.19896,12.39693
+daily_food_other,open_k0,6.37644,-0.24345,13.43563,0.05935,12.39693
+daily_food_other,post_k1,11.61764,2.03185,22.10401,0.01644,12.39693
+daily_food_other,post_k_ge2,12.68294,0.42887,26.43222,0.04207,12.39693
+other_retail,pre_k_le_m2,-0.80718,-8.52973,7.56737,0.84463,22.65489
+other_retail,open_k0,5.01839,-0.46973,10.80912,0.07377,22.65489
+other_retail,post_k1,8.80993,0.87733,17.36631,0.02881,22.65489
+other_retail,post_k_ge2,11.52967,0.86567,23.32113,0.03333,22.65489
+restaurants_bars,pre_k_le_m2,-3.52033,-6.78388,-0.14252,0.04123,19.13484
+restaurants_bars,open_k0,-0.39518,-3.30799,2.60537,0.79372,19.13484
+restaurants_bars,post_k1,1.13245,-2.70879,5.12534,0.56869,19.13484
+restaurants_bars,post_k_ge2,1.07962,-3.87338,6.28781,0.67529,19.13484
+services_other,pre_k_le_m2,-1.09863,-5.60235,3.61997,0.64224,57.66564
+services_other,open_k0,3.06848,-0.8304,7.12064,0.1245,57.66564
+services_other,post_k1,4.28576,-0.82825,9.66349,0.10189,57.66564
+services_other,post_k_ge2,5.58204,-1.55928,13.24144,0.12847,57.66564

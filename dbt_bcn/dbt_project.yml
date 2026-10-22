@@ -1,0 +1,39 @@
+name: dbt_bcn
+version: "1.0.0"
+profile: dbt_bcn
+model-paths: ["models"]
+macro-paths: ["macros"]
+seed-paths: ["seeds"]
+
+# after every dbt run / dbt build: unify the column types of schema ana (macros/harmonise_ana_types.sql)
+on-run-end:
+  - "{{ harmonise_ana_types() }}"
+
+models:
+  dbt_bcn:
+    +persist_docs:
+      relation: true             # the model description (yml) becomes the table COMMENT in PostgreSQL
+    staging:
+      +materialized: view        # exercise: light models, a view on top of the source table (schema dbt)
+    marts:
+      +materialized: table       # exercise: final models (schema dbt)
+    intermediate:
+      +materialized: table       # helper tables shared by several models (replace the old TEMP tables); schema dbt_int, not part of the catalog
+      +schema: dbt_int
+    ana:
+      +materialized: table       # the derived analysis tables (formerly sql/ana_*.sql), written into schema ana
+      +schema: ana
+    gis:
+      +materialized: table       # VISUALISATION layers for QGIS and the dashboard (schema gis): curated copies of ana tables, not for modelling
+      +schema: gis
+      +tags: ["after_python"]    # need ana.py_* tables of build_food_access.py: built by that script (dbt build --select tag:after_python)
+      after_models:
+        +tags: ["after_models"]  # need the model results (ana.py_model_*): built by load_model_outputs.py after analyze_siting.py (also carry after_python; build_food_access excludes them)
+
+seeds:
+  dbt_bcn:
+    +schema: gis                 # small fixed tables (CSV in seeds/) for the visualisation layers
+    +persist_docs:
+      relation: true
+    chain_colours:
+      +column_types: {brand_group: text, chain_label: text, colour_hex: text, sort_order: integer}

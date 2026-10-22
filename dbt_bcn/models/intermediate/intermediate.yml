@@ -1,0 +1,19 @@
+version: 2
+# Helper tables in schema dbt_int (they replace the TEMP tables of the old SQL files and are shared by several ana models).
+models:
+  - name: int_census_premises
+    description: "All premises of the commercial censuses 2014-2024 as EPSG:25831 points (one row per premise and edition). Helper table of dbt_bcn"
+    columns:
+      - name: census_year
+        tests:
+          - accepted_values:
+              arguments:
+                values: [2014, 2016, 2019, 2022, 2024]
+                quote: false
+  - name: int_active_premises_typed
+    description: "Active premises of every census edition with a type comparable across editions (daily_food_other, supermarket_class, other_retail, restaurants_bars, services_other). Helper table of dbt_bcn"
+  - name: int_store_points_base
+    description: "Store points before the census checks: official list + OSM Dia + ring stores outside the city, with in_city. Helper table of dbt_bcn"
+    columns:
+      - name: store_id
+        tests: [unique, not_null]

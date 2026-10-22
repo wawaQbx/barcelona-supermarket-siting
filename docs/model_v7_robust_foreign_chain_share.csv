@@ -1,0 +1,2 @@
+model,sections,chain,independent,odds_ratio_per_sd,ci95_low,ci95_high,p_value,r2_non_eu_share_on_controls,vif_non_eu_share
+"chain share of supermarket-class shops (binomial, v4 controls)",918,663,1740,0.82585,0.68437,0.99659,0.04597,0.68911,3.21653

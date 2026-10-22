@@ -1,0 +1,3 @@
+# Separate environment for dbt (Python 3.11): python -m venv .venv-dbt && .venv-dbt\Scripts\pip install -r dbt_bcn\requirements.txt
+dbt-core==1.12.5
+dbt-postgres==1.11.0

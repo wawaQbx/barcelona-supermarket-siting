@@ -1,0 +1,83 @@
+version: 2
+# VISUALISATION LAYERS (schema gis) for QGIS and the dashboard: curated, ready-to-map copies of ana tables (boundary + indicators in one table).
+# Do NOT use them for modelling - models read ana. Column choice and the dashboard page of every column: docs/DASHBOARD_DESIGN.md.
+models:
+  - name: section_indicators
+    description: "VISUALISATION LAYER: census-section boundaries (1068) with the dashboard indicators (population, age LQ, education, income, foreign residents, cars, transit, tourism, stores per chain, openings, food access). Not for modelling. Built by dbt model gis.section_indicators"
+    columns:
+      - name: seccio_censal
+        tests: [unique, not_null]
+  - name: barri_indicators
+    description: "VISUALISATION LAYER: barri boundaries (73) with the dashboard indicators aggregated correctly from the sections. Not for modelling. Built by dbt model gis.barri_indicators"
+    columns:
+      - name: codi_barri
+        tests: [unique, not_null]
+  - name: stores
+    description: "VISUALISATION LAYER: every store (city + 2 km ring) with chain, format, opening history, validation evidence, building, lon / lat. Not for modelling. Built by dbt model gis.stores"
+    columns:
+      - name: store_id
+        tests: [unique, not_null]
+  - name: markets
+    description: "VISUALISATION LAYER: municipal markets with chain stores at the market and fresh-food shops around them 2016-2024, lon / lat. Not for modelling. Built by dbt model gis.markets"
+    columns:
+      - name: nom_mercat
+        tests: [unique, not_null]
+  - name: transit_stops
+    description: "VISUALISATION LAYER: TMB bus stops and metro / funicular stations with routes and departures on a weekday (also 7-9 h), Saturday and Sunday. Not for modelling. Built by dbt model gis.transit_stops"
+    columns:
+      - name: stop_id
+        tests: [unique, not_null]
+  - name: traffic_counters
+    description: "VISUALISATION LAYER: traffic counting stations 2025 with mean vehicles per day on working days, Saturdays and Sundays. Not for modelling. Built by dbt model gis.traffic_counters"
+    columns:
+      - name: id_aforament
+        tests: [unique, not_null]
+  - name: model_drivers
+    description: "VISUALISATION LAYER (dashboard page 02): siting model v4 per chain group and predictor - rate ratio per SD with 95% interval, effect class, display labels and chain colour. Correlation, not causation. Built by dbt model gis.model_drivers (load_model_outputs.py after analyze_siting.py)"
+    tests:
+      - unique_combination:
+          arguments:
+            columns: "brand_group, factor_code"
+  - name: chain_census_premises
+    description: "VISUALISATION LAYER (dashboard page 03): stores of each chain in every commercial census edition 2014-2024 (city, active FOOD-RETAIL premises recognised by sign name - supermarket class per edition, co-operatives excluded -, premises within 50 m merged; Alcampo incl. Simply / Sabeco). Built by dbt model gis.chain_census_premises"
+    tests:
+      - unique_combination:
+          arguments:
+            columns: "brand_group, census_year"
+  - name: food_desert_viability
+    description: "VISUALISATION LAYER (dashboard page 04): flagged food-access sections (food desert / strict definition / older-car-less far) - residents and spending within 400 m of the section centre vs the same measure around every existing city chain store (p10 / p25 / median columns). Built by dbt model gis.food_desert_viability (food_desert_viability.py)"
+    columns:
+      - name: seccio_censal
+        tests: [unique, not_null]
+      - name: access_flag
+        tests: [not_null]
+  - name: section_access_views
+    description: "VISUALISATION LAYER (dashboard page 04 map, switchable): one row per census section x view - walking minutes at older pace to fresh food, walking minutes at older pace to a chain supermarket, climb home from the nearest chain supermarket (m) - with the class shown on the map (4 classes, same red ramp in every view) and the section's homes and residents, so a 100% bar of homes by class summarises the map. Built by dbt model gis.section_access_views (after build_food_access.py)"
+    tests:
+      - unique_combination:
+          arguments:
+            columns: "seccio_censal, view_order"
+    columns:
+      - name: class_label
+        tests: [not_null]
+  - name: store_sources
+    description: "VISUALISATION LAYER (dashboard page 05): city stores per chain with list source, reference date and share confirmed by the 2024 commercial census (chain name within 60 m). Built by dbt model gis.store_sources"
+    columns:
+      - name: brand_group
+        tests: [unique, not_null]
+  - name: food_desert_sensitivity
+    description: "VISUALISATION LAYER (dashboard page 05): low-income food-desert sections by share-of-homes threshold (25-75%) and fresh-food definition. Built by dbt model gis.food_desert_sensitivity"
+    tests:
+      - unique_combination:
+          arguments:
+            columns: "definition_order, threshold_pct"
+  - name: osm_completeness
+    description: "VISUALISATION LAYER (dashboard page 05): share of 2024 commercial-census food premises in the city that OpenStreetMap also records (matching category within 50 m; markets within 150 m), by type - the likely under-recording of shops outside the city, where only OSM is available. Built by dbt model gis.osm_completeness"
+    columns:
+      - name: category_order
+        tests: [unique, not_null]
+  - name: model_fit
+    description: "VISUALISATION LAYER (dashboard page 05): cross-validated AUC of the siting model v4 per chain group (0.5 = chance). Built by dbt model gis.model_fit"
+    columns:
+      - name: brand_group
+        tests: [unique, not_null]

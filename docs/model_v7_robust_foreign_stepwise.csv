@@ -1,0 +1,62 @@
+outcome,sample,n,spec,variable,rate_ratio_per_sd,ci95_low,ci95_high,p_value
+ALL chain stores,all sections,663,S0_no_controls,share_foreign_non_eu_2026_pct,0.86653,0.81083,0.92604,2e-05
+ALL chain stores,all sections,663,S1_demand,share_foreign_non_eu_2026_pct,0.87902,0.79609,0.9706,0.01077
+ALL chain stores,all sections,663,S2_plus_transit_premises,share_foreign_non_eu_2026_pct,0.78882,0.70349,0.88449,5e-05
+ALL chain stores,all sections,663,S3_plus_centre_distance_v7,share_foreign_non_eu_2026_pct,0.78219,0.689,0.88798,0.00015
+ALL chain stores,all sections,663,S4_plus_cadastre_rent_proxy_buildings,share_foreign_non_eu_2026_pct,0.82584,0.72744,0.93755,0.00312
+ALL chain stores,all sections,663,S5_plus_district_fixed_effects,share_foreign_non_eu_2026_pct,0.81789,0.71478,0.93587,0.00346
+ALL chain stores,without Ciutat Vella,623,S3_plus_centre_distance_v7,share_foreign_non_eu_2026_pct,0.84917,0.76502,0.94258,0.00214
+ALL chain stores,without Ciutat Vella,623,S5_plus_district_fixed_effects,share_foreign_non_eu_2026_pct,0.87592,0.78226,0.98079,0.02166
+Lidl,all sections,27,S0_no_controls,share_foreign_non_eu_2026_pct,0.71368,0.52571,0.96887,0.03056
+Lidl,all sections,27,S1_demand,share_foreign_non_eu_2026_pct,0.58171,0.32871,1.02946,0.06285
+Lidl,all sections,27,S2_plus_transit_premises,share_foreign_non_eu_2026_pct,0.48788,0.27361,0.86995,0.01501
+Lidl,all sections,27,S3_plus_centre_distance_v7,share_foreign_non_eu_2026_pct,0.39938,0.19624,0.81283,0.01136
+Lidl,all sections,27,S4_plus_cadastre_rent_proxy_buildings,share_foreign_non_eu_2026_pct,0.41979,0.18114,0.97285,0.04296
+Lidl,all sections,27,S5_plus_district_fixed_effects,share_foreign_non_eu_2026_pct,0.38384,0.14677,1.00385,0.05092
+Lidl,without Ciutat Vella,25,S3_plus_centre_distance_v7,share_foreign_non_eu_2026_pct,0.53523,0.27105,1.05687,0.07176
+Lidl,without Ciutat Vella,25,S5_plus_district_fixed_effects,share_foreign_non_eu_2026_pct,0.60261,0.28323,1.28211,0.18856
+Caprabo,all sections,99,S0_no_controls,share_foreign_non_eu_2026_pct,0.78891,0.63018,0.9876,0.03857
+Caprabo,all sections,99,S1_demand,share_foreign_non_eu_2026_pct,0.85405,0.64679,1.12772,0.26597
+Caprabo,all sections,99,S2_plus_transit_premises,share_foreign_non_eu_2026_pct,0.75628,0.58094,0.98453,0.03791
+Caprabo,all sections,99,S3_plus_centre_distance_v7,share_foreign_non_eu_2026_pct,0.68554,0.5171,0.90884,0.00868
+Caprabo,all sections,99,S4_plus_cadastre_rent_proxy_buildings,share_foreign_non_eu_2026_pct,0.72251,0.52594,0.99254,0.04484
+Caprabo,all sections,99,S5_plus_district_fixed_effects,share_foreign_non_eu_2026_pct,0.69975,0.50442,0.97071,0.03252
+Caprabo,without Ciutat Vella,93,S3_plus_centre_distance_v7,share_foreign_non_eu_2026_pct,0.71739,0.54481,0.94463,0.018
+Caprabo,without Ciutat Vella,93,S5_plus_district_fixed_effects,share_foreign_non_eu_2026_pct,0.73792,0.54571,0.99782,0.04837
+Condis,all sections,231,S0_no_controls,share_foreign_non_eu_2026_pct,0.79494,0.72201,0.87523,0.0
+Condis,all sections,231,S1_demand,share_foreign_non_eu_2026_pct,0.76279,0.61837,0.94095,0.01146
+Condis,all sections,231,S2_plus_transit_premises,share_foreign_non_eu_2026_pct,0.72098,0.57276,0.90756,0.00534
+Condis,all sections,231,S3_plus_centre_distance_v7,share_foreign_non_eu_2026_pct,0.71676,0.55462,0.92629,0.01092
+Condis,all sections,231,S4_plus_cadastre_rent_proxy_buildings,share_foreign_non_eu_2026_pct,0.80149,0.6205,1.03527,0.09017
+Condis,all sections,231,S5_plus_district_fixed_effects,share_foreign_non_eu_2026_pct,0.81748,0.61876,1.08003,0.15614
+Condis,without Ciutat Vella,224,S3_plus_centre_distance_v7,share_foreign_non_eu_2026_pct,0.82067,0.66363,1.01487,0.06818
+Condis,without Ciutat Vella,224,S5_plus_district_fixed_effects,share_foreign_non_eu_2026_pct,0.85795,0.67703,1.08722,0.20482
+Carrefour,all sections,37,S0_no_controls,share_foreign_non_eu_2026_pct,1.02288,0.85863,1.21856,0.8
+Carrefour,all sections,37,S1_demand,share_foreign_non_eu_2026_pct,0.77059,0.51219,1.15936,0.21114
+Carrefour,all sections,37,S2_plus_transit_premises,share_foreign_non_eu_2026_pct,0.6272,0.40669,0.96728,0.03482
+Carrefour,all sections,37,S3_plus_centre_distance_v7,share_foreign_non_eu_2026_pct,0.59033,0.34663,1.00534,0.05234
+Carrefour,all sections,37,S4_plus_cadastre_rent_proxy_buildings,share_foreign_non_eu_2026_pct,0.59085,0.36104,0.96692,0.03628
+Carrefour,all sections,37,S5_plus_district_fixed_effects,share_foreign_non_eu_2026_pct,0.58517,0.3274,1.04589,0.07052
+Carrefour,without Ciutat Vella,32,S3_plus_centre_distance_v7,share_foreign_non_eu_2026_pct,0.68438,0.43842,1.06832,0.09509
+Carrefour,without Ciutat Vella,32,S5_plus_district_fixed_effects,share_foreign_non_eu_2026_pct,0.65027,0.40686,1.0393,0.07204
+independent supermarkets (census 2024),all sections,1740,S0_no_controls,share_foreign_non_eu_2026_pct,1.03915,0.97945,1.10249,0.20334
+independent supermarkets (census 2024),all sections,1740,S1_demand,share_foreign_non_eu_2026_pct,1.17319,0.9984,1.37857,0.05232
+independent supermarkets (census 2024),all sections,1740,S2_plus_transit_premises,share_foreign_non_eu_2026_pct,1.04472,0.93442,1.16805,0.4422
+independent supermarkets (census 2024),all sections,1740,S3_plus_centre_distance_v7,share_foreign_non_eu_2026_pct,0.9505,0.86128,1.04896,0.31273
+independent supermarkets (census 2024),all sections,1740,S4_plus_cadastre_rent_proxy_buildings,share_foreign_non_eu_2026_pct,0.99844,0.91131,1.0939,0.97324
+independent supermarkets (census 2024),all sections,1740,S5_plus_district_fixed_effects,share_foreign_non_eu_2026_pct,0.98395,0.89777,1.07839,0.72932
+independent supermarkets (census 2024),without Ciutat Vella,1563,S3_plus_centre_distance_v7,share_foreign_non_eu_2026_pct,0.99853,0.91585,1.08868,0.97347
+independent supermarkets (census 2024),without Ciutat Vella,1563,S5_plus_district_fixed_effects,share_foreign_non_eu_2026_pct,0.98955,0.91142,1.07437,0.80225
+other daily-food shops (census 2024),all sections,5478,S0_no_controls,share_foreign_non_eu_2026_pct,1.03024,0.9021,1.1766,0.66018
+other daily-food shops (census 2024),all sections,5478,S1_demand,share_foreign_non_eu_2026_pct,1.0031,0.8501,1.18365,0.97072
+other daily-food shops (census 2024),all sections,5478,S2_plus_transit_premises,share_foreign_non_eu_2026_pct,0.7245,0.63335,0.82876,0.0
+other daily-food shops (census 2024),all sections,5478,S3_plus_centre_distance_v7,share_foreign_non_eu_2026_pct,0.79481,0.69019,0.91529,0.00143
+other daily-food shops (census 2024),all sections,5478,S4_plus_cadastre_rent_proxy_buildings,share_foreign_non_eu_2026_pct,0.76225,0.66445,0.87445,0.00011
+other daily-food shops (census 2024),all sections,5478,S5_plus_district_fixed_effects,share_foreign_non_eu_2026_pct,0.76569,0.66485,0.88182,0.00021
+other daily-food shops (census 2024),without Ciutat Vella,4808,S3_plus_centre_distance_v7,share_foreign_non_eu_2026_pct,0.86685,0.7738,0.97109,0.01365
+other daily-food shops (census 2024),without Ciutat Vella,4808,S5_plus_district_fixed_effects,share_foreign_non_eu_2026_pct,0.84327,0.74987,0.94831,0.00442
+ALL chain stores,all sections,663,S3_offset_ln_dwellings_instead_of_population,share_foreign_non_eu_2026_pct,0.87073,0.75546,1.00358,0.05606
+Lidl,all sections,27,S3_offset_ln_dwellings_instead_of_population,share_foreign_non_eu_2026_pct,0.42207,0.19836,0.89809,0.02516
+Caprabo,all sections,99,S3_offset_ln_dwellings_instead_of_population,share_foreign_non_eu_2026_pct,0.76227,0.56393,1.03036,0.07749
+Condis,all sections,231,S3_offset_ln_dwellings_instead_of_population,share_foreign_non_eu_2026_pct,0.77659,0.58492,1.03106,0.08039
+other daily-food shops (census 2024),all sections,5478,S3_offset_ln_dwellings_instead_of_population,share_foreign_non_eu_2026_pct,0.882,0.76422,1.01793,0.08598

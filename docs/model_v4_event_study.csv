@@ -1,0 +1,9 @@
+sample,sites_treated,sites_control,event_time,pct_change_premises,ci95_low_pct,ci95_high_pct,p_value
+new_site,258,263,pre_k_le_m2,-0.97337,-5.80837,4.10981,0.70173
+new_site,258,263,open_k0,4.3425,0.55733,8.27016,0.02415
+new_site,258,263,post_k1,6.53434,1.3859,11.94422,0.01226
+new_site,258,263,post_k_ge2,7.96739,0.82387,15.61704,0.02817
+takeover_of_food_premise,65,263,pre_k_le_m2,-4.25643,-11.05535,3.06221,0.24712
+takeover_of_food_premise,65,263,open_k0,-2.88132,-10.37673,5.24095,0.47557
+takeover_of_food_premise,65,263,post_k1,-5.12608,-13.23883,3.74526,0.24859
+takeover_of_food_premise,65,263,post_k_ge2,-7.02685,-18.73384,6.36661,0.28865
